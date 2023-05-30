@@ -15,6 +15,8 @@
 import { ref } from "vue"
 import axios from "axios";
 import baseUrl from '@/api_config.js'
+import router from "../../../router";
+
 
 //..binding to the form
 const name = ref("")
@@ -27,6 +29,7 @@ const create = () => {
         }
     ).then((response) => {
         alert("Categoria Cadastrada com Sucesso!")
+        router.push("/categories")
     }).catch((error => {
         alert("Erro: " + error)
     }))
