@@ -2,7 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 // Importe seus componentes de rota
 import Home from '@/views/home/Home.vue'
-import CategoryIndex from '@/views/categories/index/CategoryIndex.vue'
+import CategoryIndex from  '@/views/categories/index/CategoryIndex.vue'
+import CategoryCreate from '@/views/categories/create/CategoryCreate.vue'
+
 import BookIndex from '@/views/books/index/BookIndex.vue'
 import AuthorIndex from '@/views/authors/index/AuthorIndex.vue'
 
@@ -16,6 +18,11 @@ const routes = [
     path: '/categories',
     name: 'categories',
     component: CategoryIndex
+  },
+  {
+    path: '/categories/create',
+    name: 'categories-create',
+    component: CategoryCreate
   },
   {
     path: '/books',

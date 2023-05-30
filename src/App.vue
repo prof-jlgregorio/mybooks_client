@@ -8,6 +8,7 @@
         <li>
           Categorias
           <ul>
+            <li><router-link to="/categories/create">Cadastrar</router-link></li> 
             <li><router-link to="/categories">Listar</router-link></li>
           </ul>
         </li>
