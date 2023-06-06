@@ -12,8 +12,13 @@
           <tr v-for="category in categories" :key="category.id">
             <td>{{ category.id }}</td>
             <td>{{ category.name }}</td>
-            <td>Comandos....</td>
+            <td> 
+              <router-link 
+                :to="{ name: 'categories-update', params : { id: category.id } }">
+                Editar</router-link> 
+            </td>
           </tr>
+
         </tbody>
       </table>
     </div>
